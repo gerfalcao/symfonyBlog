@@ -5,8 +5,12 @@
   background-color: #44689E;
   padding: 10px 20px;
   border-radius: 5px;
-  margin: 0 auto;
+  margin: 10px auto;
   box-shadow: 3px 1px 3px #000 0.8;
+}
+
+.post h5 {
+  color: antiquewhite 0.6;
 }
 
 .post-title h1 {
@@ -37,4 +41,5 @@
   width: 400px;
   line-height: 1.5;
   margin: 0 auto;
+  padding: 10px 0;
 }
