@@ -1,0 +1,32 @@
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: 'Lora';
+}
+
+.header-menu {
+  justify-content: center;
+  padding: 20px;
+}
+
+.header a {
+  size: 1.123rem;
+  line-height: 1.3px;
+  text-decoration: none;
+  color: #141414;
+  padding: 0px 20px; 
+
+}
+
+.header a:hover {
+  transform: scale(1,1);
+  transition: all 0.5s;
+}

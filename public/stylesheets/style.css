@@ -1,0 +1,19 @@
+@import './header.css';
+@import './main.css';
+@import './post.css';
+@import './footer.css';
+@import url(https://fonts.googleapis.com/css?family=Hind+Siliguri|Lora);
+
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: 'Hind Siliguri';
+}

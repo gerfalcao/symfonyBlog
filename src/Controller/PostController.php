@@ -76,16 +76,11 @@ class PostController extends AbstractController
 
     }
 
-    // #[Route('/post/{id}', name: 'app_post')]
-    // public function post($id): Response
-    // {
-    //     $posts = $this->em->getRepository(Post::class)->find($id);
-    //     $custom_post = $this->em->getRepository(Post::class)->findPost($id);
-    //     return $this->render('post/index.html.twig', [
-    //         'posts' => $posts,
-    //         'custom_post' => $custom_post
-    //     ]);
-    // }
+    #[Route('/post/details/{id}', name: 'postDetails')]
+    public function postDetails(Post $post)
+    {
+        return $this->render('post/post-details.html.twig', ['post' => $post]);
+    }
 
     // #[Route('/insert/post', name: 'insert_post')]
     // public function insert(){

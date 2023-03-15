@@ -1,7 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello UserController!{% endblock %}
+{% block title %}Novo usuário - {{parent()}}{% endblock %}
 
 {% block body %}
+  <div class="new-user">
+  <h2>Preencha o formulário abaixo e cadastre-se:
+  </h2>
  {{form(registration_form)}}
+  </div>
+
 {% endblock %}

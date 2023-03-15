@@ -1,0 +1,40 @@
+.post {
+  align-self: center;
+  width: 80%;
+  gap: 20px;
+  background-color: #44689E;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 3px 1px 3px #000 0.8;
+}
+
+.post-title h1 {
+  color: antiquewhite;
+  text-shadow: 1px 1px #000;
+}
+
+.post a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.post-description {
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #6CA5FA;
+}
+
+.new-post {
+  width: 400px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+
+.new-user {
+  width: 400px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
