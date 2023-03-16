@@ -5,9 +5,15 @@
 {% block body %}
 
    <div class="new-post">
-   <h2>Faça uma nova postagem
-   </h2>
-   {{form(form)}}
+      <div>
+      <h2>Quer fazer uma nova postagem?
+      </h2>
+      {% if is_granted('IS_AUTHENTICATED_REMEMBERED')%}
+      {{form(form)}}
+      {% else %}
+      <p> Faça <a href="/login">login</a> para postar </p>
+      {% endif %}
+      </div>
    </div>
 
    {% for post in posts %}
@@ -29,10 +35,12 @@
             <div class="post-description">
                <p>{{post.description}}
                </p>
-            </div>
+            </div><br>
             <div class="img">
                {% if post.file != null %}
-                  <img src="{{asset ('upload/files/' ~ post.file)}}" alt="Not found" width="100%">
+                  <div class="post-img">
+                  <img class="post-img" src="{{asset ('uploads/files/' ~ post.file)}}" >
+                  </div>
                {% endif %}
             </div>
          </div>

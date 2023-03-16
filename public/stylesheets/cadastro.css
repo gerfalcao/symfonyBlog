@@ -1,0 +1,10 @@
+.form-group {
+  font-family: 'Hind Siliguri';
+  gap: 2px;
+}
+
+.button {
+  color: antiquewhite;
+  border-radius: 5px;
+  background-color: #44689E;
+}

@@ -101,11 +101,11 @@ class PostController extends AbstractController
     //     return new HttpFoundationJsonResponse((['success' => true]));
     // }
 
-    // #[Route('/remove/post/', name: 'insert_post')]
-    // public function remove(){
-    //     $post = $this->em->getRepository(Post::class)->find(1);
-    //     $this->em->remove($post);
-    //     $this->em->flush();
-    //     return new HttpFoundationJsonResponse((['success' => true]));
-    // }
+    #[Route('/remove/post/{id}', name: 'remove_post')]
+    public function remove(Post $id){
+        $post = $this->em->getRepository(Post::class)->find($id);
+        $this->em->remove($post);
+        $this->em->flush();
+        return new HttpFoundationJsonResponse((['success' => true]));
+    }
 }

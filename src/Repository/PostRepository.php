@@ -52,15 +52,15 @@ class PostRepository extends ServiceEntityRepository
 
 
 
-    // public function findPost($id){
-    //     return $this->getEntityManager()->createQuery('
-    //          SELECT post.id, post.title, post.type
-    //          FROM App:Post post
-    //          WHERE post.id =:id
-    //     ')
-    //     ->setParameter('id', $id)
-    //     ->getSingleResult();
-    // }
+    public function findPost($id){
+        return $this->getEntityManager()->createQuery('
+             SELECT post.id, post.title, post.type
+             FROM App:Post post
+             WHERE post.id =:id
+        ')
+        ->setParameter('id', $id)
+        ->getSingleResult();
+    }
 
 //    /**
 //     * @return Post[] Returns an array of Post objects

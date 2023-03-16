@@ -25,7 +25,9 @@
             </div>
             <div class="img">
                {% if post.file != null %}
-                  <img src="{{asset ('upload/files/' ~ post.file)}}" alt="Not found" width="100%">
+                  <div class="post-img">
+                  <img src="{{asset ('uploads/files/' ~ post.file)}}" alt="Not found" width="100%">
+                  </div>
                {% endif %}
             </div>
          </div>
